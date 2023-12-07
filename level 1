@@ -1,7 +1,7 @@
 package Caculator
 
-import java.lang.Integer.sum
-// 위에 이 임포트값이 sum 추가하려고 하다가 추가되었는데 원리를 모르겠어요
+
+// 임포트값 삭제하고도 돌아가는 버전도 한개 업로드합니다.
 
 fun main(){
 
@@ -11,7 +11,7 @@ fun main(){
     var num1 = readLine()!!.toInt()
     var num2 = readLine()!!.toInt()
 
-    sum(num1,num2)
+//    sum(num1,num2)
 
     println("입력값이 ${num1}, ${num2}로 확인되었습니다. 사용할 계산 방식을 골라주세요")
     println("+는 1, -는 2, *는 3, /는 4를 입력해 주세요")
@@ -40,3 +40,72 @@ fun main(){
             println("잘못된 값을 입력하셨습니다. 프로그램을 재 실행해 주세요")
         }
     }
+    fun sum(){
+    }
+}
+
+//    if(Operator == 1){
+//
+//        println("+를 선택하셨군요, 잠시만 기다려 주세요")
+//        println("두 수의 합은 ${num1+num2} 입니다 " )
+//
+//        else if(Operator == 2)
+//        println("-를 선택하셨군요, 잠시만 기다려 주세요")
+//        println("두 수의 차는 ${num1-num2} 입니다 " )
+//
+//        else if(Operator == 3)
+//        println("*를 선택하셨군요, 잠시만 기다려 주세요")
+//        println("두 수의 곱은 ${num1*num2} 입니다 " )
+//
+//        else if(Operator == 4)
+//        println("/를 선택하셨군요, 잠시만 기다려 주세요")
+//        println("두 수를 나눌 시 몫의 값은 ${num1/num2} 입니다 " )
+//
+//        else(Operator == null)
+//        println("잘못된 값을 입력하셨습니다. 프로그램을 재 실행해 주세요")
+//
+//    }
+
+//    class operator : (int)
+//
+//    var operator = readLine()!!.toInt()
+//
+//    if(operator = 1){
+//
+//        println("+를 선택하셨군요, 잠시만 기다려 주세요")
+//        println("두 수의 합은 ${num1+num2} 입니다 " )
+//
+//        else(operator = 2)
+//        println("-를 선택하셨군요, 잠시만 기다려 주세요")
+//        println("두 수의 차는 ${num1-num2} 입니다 " )
+//
+//        else(operator = 3)
+//        println("*를 선택하셨군요, 잠시만 기다려 주세요")
+//        println("두 수의 곱은 ${num1*num2} 입니다 " )
+//
+//        else(operator = 4)
+//        println("/를 선택하셨군요, 잠시만 기다려 주세요")
+//        println("두 수를 나눌 시 몫의 값은 ${num1/num2} 입니다 " )
+//
+//        else(operator = null)
+//        println("잘못된 값을 입력하셨습니다. 프로그램을 재 실행해 주세요")
+//
+//    }
+
+//    fun sum(num1:int, num2:int){
+//var result = num1 + num2
+//
+//    }
+//
+//    class operator = 1
+//
+//
+//
+//    class plus = num1 + num2;
+//    class minus = num1 - num2;
+//    class multiply = num1 * num2;
+//    class divide = num1 / num2;
+//
+//
+//    println("입력은 ${num1} , ${num2}인데 둘을 더해서 ${plus}이예요!")
+
