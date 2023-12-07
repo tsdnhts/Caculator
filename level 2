@@ -1,0 +1,47 @@
+package Caculator
+
+import java.lang.Integer.sum
+// 위에 이 임포트값이 sum 추가하려고 하다가 추가되었는데 원리를 모르겠어요
+
+fun main(){
+
+    println("안녕하세요 Kotlin 계산기에 온 것을 환영합니다")
+    println("계산할 두개의 정수를 입력해 주세요")
+
+    var num1 = readLine()!!.toInt()
+    var num2 = readLine()!!.toInt()
+
+    sum(num1,num2)
+
+    println("입력값이 ${num1}, ${num2}로 확인되었습니다. 사용할 계산 방식을 골라주세요")
+    println("+는 1, -는 2, *는 3, /는 4, %는 5를 입력해 주세요")
+
+    var Operator = readLine()!!.toInt()
+
+    when (Operator) {
+        1 -> {
+            println("+를 선택하셨군요, 잠시만 기다려 주세요")
+            println("두 수의 합은 ${num1 + num2} 입니다 ")
+        }
+
+        2 -> {
+            println("-를 선택하셨군요, 잠시만 기다려 주세요")
+            println("두 수의 차는 ${num1 - num2} 입니다 ")
+        }
+        3 -> {
+            println("*를 선택하셨군요, 잠시만 기다려 주세요")
+            println("두 수의 곱은 ${num1 * num2} 입니다 ")
+        }
+        4 -> {
+            println("/를 선택하셨군요, 잠시만 기다려 주세요")
+            println("두 수를 나눌 시 몫의 값은 ${num1 / num2} 입니다 ")
+        }
+        5 -> {
+            println("%를 선택하셨군요, 잠시만 기다려 주세요")
+            println("두 수를 나눈 나머지의 값은 ${num1 % num2} 입니다")
+
+        }
+        else->{
+            println("잘못된 값을 입력하셨습니다. 프로그램을 재 실행해 주세요")
+        }
+    }
