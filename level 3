@@ -1,0 +1,46 @@
+package NewCalculator
+
+import NewCaculator.Calculator
+
+fun main() {
+
+    println("안녕하세요 Kotlin 계산기에 온 것을 환영합니다")
+    println("계산할 두개의 정수를 입력해 주세요")
+
+    val num1 = readln().toInt()
+    val num2 = readln().toInt()
+
+    println("입력값이 ${num1}, ${num2}로 확인되었습니다. 사용할 계산 방식을 골라주세요")
+    println("+는 1, -는 2, *는 3, /는 4를 입력해 주세요")
+
+    var Operator = readLine()!!.toInt()
+    when (Operator) {
+        1 -> {
+            println("+를 선택하셨군요, 잠시만 기다려 주세요")
+            println("${num1}과 ${num2}를 더한 결과는 : ${calc.addOperation(AddOperation(), num1, num2)} 입니다")
+        }
+
+        2 -> {
+            println("-를 선택하셨군요, 잠시만 기다려 주세요")
+            println("${num1}과 ${num2}를 뺀 결과는 : ${calc.substractOperation(SubstractOperation(), num1, num2)} 입니다")
+        }
+        3 -> {
+            println("*를 선택하셨군요, 잠시만 기다려 주세요")
+            println("${num1}과 ${num2}를 곱한 결과는 : ${calc.multiplyOperation(MultiplyOperation(), num1, num2)} 입니다")
+        }
+        4 -> {
+            println("/를 선택하셨군요, 잠시만 기다려 주세요")
+            println("${num1}과 ${num2}를 나누면 결과는 : ${calc.divideOperation(DivideOperation(), num1, num2)} 입니다")
+        }
+        else->{
+            println("잘못된 값을 입력하셨습니다. 프로그램을 재 실행해 주세요")
+        }
+    }
+}
+
+    val calc = Calculator()
+
+//
+//    println("${num1}과 ${num2}를 연산한 결과는 : ${calc.addOperation(AddOperation(), num1, num2)} 입니다")
+//
+//}
