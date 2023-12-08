@@ -1,0 +1,56 @@
+package NewCaculator
+
+import NewCalculator.AddOperation
+import NewCalculator.SubstractOperation
+import NewCalculator.MultiplyOperation
+import NewCalculator.DivideOperation
+
+    class Calculator {
+
+        var num1 : Int =0
+        var num2 : Int =0
+
+        constructor(){
+            println("계산을 시작합니다")
+        }
+
+        fun addOperation(addOperation:AddOperation, num1:Int, num2:Int): Double {
+            return addOperation.operate(num1,num2)
+        }
+        fun substractOperation(substractOperation: SubstractOperation, num1: Int, num2: Int): Double {
+            return substractOperation.operate(num1,num2)
+        }
+        fun multiplyOperation(multiplyOperation: MultiplyOperation, num1: Int, num2: Int): Double {
+            return multiplyOperation.operate(num1,num2)
+        }
+        fun divideOperation(divideOperation: DivideOperation, num1: Int, num2: Int): Double {
+            return divideOperation.operate(num1,num2)
+
+        }
+
+
+    }
+
+//    {_num1:int, _num2:int)
+//
+//        var num1:Int = ""
+//        var num2:Int = ""
+//        var num3:Int = ""
+//
+//        init{
+//            println("입력된 정수값은 ${num1}, ${num2} 이며 연산 방법을 선택해 주십시오")
+//        }
+//
+//        fun addOperation(num1: Int, num2: Int): Double {
+//            return "${num1 + num2}"
+//        }
+//        fun SubstractOperation(num1: Int, num2: Int): Double {
+//            return "${num1 - num2}"
+//        }
+//        fun MultiplyOperation(num1: Int, num2: Int): Double {
+//            return "${num1 * num2}"
+//        }
+//        fun DivideOperation(num1: Int, num2: Int): Double {
+//            return "${num1 / num2}"
+//        }
+//    }
